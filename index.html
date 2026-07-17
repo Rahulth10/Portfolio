@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul TH | Portfolio</title>
+    <meta name="description"
+        content="Cloud Computing, Full Stack Development Professional, and B.Tech AI & Data Science Student Portfolio. View projects, skills, and experience.">
+    <meta name="keywords"
+        content="Rahul TH, Cloud Computing, Full Stack Developer, Cloud Engineer, Portfolio, AI, Data Science, AWS, Python, SQL">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Canvas for Particles -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#home" class="logo">RAHUL <span class="accent-letter">TH</span></a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link active" id="nav-home">HOME</a></li>
+                    <li><a href="#about" class="nav-link" id="nav-about">ABOUT</a></li>
+                    <li><a href="#experience" class="nav-link" id="nav-experience">EXPERIENCE</a></li>
+                    <li><a href="#skills" class="nav-link" id="nav-skills">SKILLS</a></li>
+                    <li><a href="#projects" class="nav-link" id="nav-projects">PROJECTS</a></li>
+                    <li><a href="#journey" class="nav-link" id="nav-journey">JOURNEY</a></li>
+                    <li><a href="#contact" class="nav-link" id="nav-contact">CONTACT</a></li>
+                </ul>
+                <div class="nav-indicator" id="nav-indicator"></div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="section-container hero-container">
+                <div class="hero-text">
+                    <p class="hero-greeting">HELLO, RECRUITERS! I AM</p>
+                    <h1 class="hero-name">Rahul <span class="text-glow">TH</span></h1>
+                    <h2 class="hero-title"><strong>Artificial Intelligence & Data Science Student</strong> | Aspiring
+                        Cloud Engineer | Full Stack Developer | Passionate About Building Scalable Web Applications and
+                        Cloud Solutions</h2>
+                    <p class="hero-description">Driven by the vision of building scalable cloud solutions that enhance
+                        efficiency, collaboration, and digital innovation.</p>
+                    <div class="hero-buttons">
+                        <a href="#about" class="btn btn-primary">
+                            Know More
+                            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <a href="https://linkedin.com/in/rahul-th-02373028b" target="_blank" rel="noopener noreferrer"
+                            class="btn btn-outline">
+                            <svg class="btn-icon-left" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image-container">
+                    <div class="image-glow-ring">
+                        <img src="profile_photo.jpg" alt="Rahul TH Professional Portrait" class="profile-photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="section-container">
+                <div class="about-grid">
+                    <!-- Executive Summary Card -->
+                    <div class="info-card exec-summary-card scroll-reveal">
+                        <h3 class="card-title">Profile Summary</h3>
+                        <div class="card-content">
+                            <p>Aspiring Cloud Computing and Full Stack Development professional with foundational
+                                knowledge in cloud technologies, programming, and software development.</p>
+                            <p>Driven by the vision of building scalable cloud solutions that enhance efficiency,
+                                collaboration, and digital innovation. Passionate about learning emerging technologies,
+                                developing scalable solutions, and contributing effectively in collaborative and
+                                innovative environments.</p>
+                            <div class="quote-box">
+                                <p>Driven by the vision of building scalable cloud solutions that enhance efficiency,
+                                    collaboration, and digital innovation.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Info Card -->
+                    <div class="info-card contact-info-card scroll-reveal delay-100">
+                        <h3 class="card-title">Contact Information</h3>
+                        <div class="card-content">
+                            <ul class="contact-list">
+                                <li>
+                                    <div class="contact-icon-wrapper">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path
+                                                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                            </path>
+                                            <polyline points="22,6 12,13 2,6"></polyline>
+                                        </svg>
+                                    </div>
+                                    <a href="mailto:rahulth2006@gmail.com"
+                                        class="contact-link">rahulth2006@gmail.com</a>
+                                </li>
+                                <li>
+                                    <div class="contact-icon-wrapper">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path
+                                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <a href="tel:+917305893447" class="contact-link">+91 7305893447</a>
+                                </li>
+                                <li>
+                                    <div class="contact-icon-wrapper">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z">
+                                            </path>
+                                            <circle cx="12" cy="10" r="3"></circle>
+                                        </svg>
+                                    </div>
+                                    <span class="contact-text">Chennai, India</span>
+                                </li>
+                                <li>
+                                    <div class="contact-icon-wrapper">
+                                        <svg viewBox="0 0 24 24" width="20" height="20"
+                                            xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                                            <path
+                                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                        </svg>
+                                    </div>
+                                    <a href="https://linkedin.com/in/rahul-th-02373028b" target="_blank"
+                                        rel="noopener noreferrer"
+                                        class="contact-link highlighted">linkedin.com/in/rahul-th-02373028b</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <div class="section-container">
+                <h2 class="section-title">Internships & Experience</h2>
+                <div class="timeline">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item scroll-reveal">
+                        <div class="timeline-marker">
+                            <div class="timeline-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">June 2026 - Present</span>
+                            <h3 class="timeline-role">Cloud Engineer Intern</h3>
+                            <h4 class="timeline-company">Trunova Technologies Pvt Ltd</h4>
+                            <ul class="timeline-bullets">
+                                <li>Developed a cloud-based collaborative platform to support project management, file
+                                    sharing, and team communication.</li>
+                                <li>Applied cloud computing concepts to design a scalable and user-centric solution for
+                                    remote collaboration.</li>
+                                <li>Enhanced problem-solving, research, teamwork, and technical documentation skills
+                                    through hands-on project development.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item scroll-reveal">
+                        <div class="timeline-marker">
+                            <div class="timeline-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">February 2026 - March 2026</span>
+                            <h3 class="timeline-role">Human Resource Analyst</h3>
+                            <h4 class="timeline-company">Zetheto Algorithms Private Limited</h4>
+                            <ul class="timeline-bullets">
+                                <li>Supported HR data analysis by organizing, processing, and preparing workforce
+                                    reports to assist decision-making.</li>
+                                <li>Analyzed HR-related data and contributed to generating reports for recruitment and
+                                    workforce management.</li>
+                                <li>Assisted in collecting, organizing, and analyzing HR data to prepare accurate
+                                    reports and improve reporting efficiency.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="timeline-item scroll-reveal">
+                        <div class="timeline-marker">
+                            <div class="timeline-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">July 2025</span>
+                            <h3 class="timeline-role">Internet of Things (IoT) Intern</h3>
+                            <h4 class="timeline-company">Central Institute of Tool Design (CITD), MSME Tool Room</h4>
+                            <ul class="timeline-bullets">
+                                <li>Acquired practical knowledge of IoT, embedded systems, sensors, and connected
+                                    devices.</li>
+                                <li>Enhanced technical skills through hands-on training and practical implementation.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="section-container">
+                <h2 class="section-title">Tech Toolkit & Skills</h2>
+                <div class="skills-grid">
+                    <!-- Column 1: Core Skills -->
+                    <div class="skills-card scroll-reveal">
+                        <div class="skills-card-header">
+                            <div class="skills-icon-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                    <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
+                                    <path d="M3 12A9 3 0 0 0 21 12"></path>
+                                </svg>
+                            </div>
+                            <h3 class="skills-card-title">Core Skills</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span class="skill-tag">Cloud Computing</span>
+                            <span class="skill-tag">Full Stack Development</span>
+                            <span class="skill-tag">Web Application Development</span>
+                            <span class="skill-tag">Cloud-Based Application Development</span>
+                            <span class="skill-tag">Cloud Storage Integration</span>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Programming Skills -->
+                    <div class="skills-card scroll-reveal delay-100">
+                        <div class="skills-card-header">
+                            <div class="skills-icon-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="16 18 22 12 16 6"></polyline>
+                                    <polyline points="8 6 2 12 8 18"></polyline>
+                                </svg>
+                            </div>
+                            <h3 class="skills-card-title">Programming Skills</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span class="skill-tag skill-tag-flex">
+                                <svg class="tag-logo-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor">
+                                    <path
+                                        d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.18.35.12.35.07.35.03.34-.01.34-.05.35-.09.35-.14.35-.2.34-.23.34-.29.34-.32.32-.38.3-.43.28-.48.24-.52.21-.57.17-.61.12-.66.08-.71.04h-.75l-.71-.04-.66-.08-.61-.12-.57-.17-.52-.21-.48-.24-.43-.28-.38-.3-.32-.32-.29-.34-.23-.34-.2-.34-.14-.35-.09-.35-.05-.35-.01-.34.03-.34.07-.35.12-.35.18-.35.25-.34.34-.34.45-.32.59-.3.73-.26.9-.2 1.05-.08 1.05.08zm-2.88 4.29l.34-.02.32.02.29.07.26.11.22.14.18.18.13.2.09.23.05.25.02.26v.25l-.02.27-.05.25-.09.23-.13.2-.18.17-.22.14-.26.12-.29.06-.32.02-.34-.02-.32-.02-.29-.06-.26-.12-.22-.14-.18-.17-.13-.2-.09-.23-.05-.25-.02-.27v-.25l.02-.26.05-.25.09-.23.13-.2.18-.18.22-.14.26-.11.29-.07.32.02zm0 1.95c.13 0 .25-.04.34-.11.09-.08.14-.18.14-.3s-.05-.22-.14-.3a.52.52 0 0 0-.68 0c-.09.08-.14.18-.14.3s.05.22.14.3c.09.07.21.11.34.11zm5.72 1.83l.89.2.73.26.59.3.45.33.34.34.25.33.18.35.12.35.07.35.03.34-.01.34-.05.35-.09.35-.14.35-.2.34-.23.34-.29.34-.32.32-.38.3-.43.28-.48.24-.52.21-.57.17-.61.12-.66.08-.71.04h-.75l-.71-.04-.66-.08-.61-.12-.57-.17-.52-.21-.48-.24-.43-.28-.38-.3-.32-.32-.29-.34-.23-.34-.2-.34-.14-.35-.09-.35-.05-.35-.01-.34.03-.34.07-.35.12-.35.18-.35.25-.33.34-.34.45-.33.59-.3.73-.26.89-.2 1.06-.08 1.05.08zm-2.88 4.29l.34-.02.32.02.29.06.26.12.22.14.18.18.13.2.09.23.05.25.02.26v.25l-.02.26-.05.25-.09.23-.13.2-.18.18-.22.14-.26.12-.29.06-.32.02-.34-.02-.32-.02-.29-.06-.26-.12-.22-.14-.18-.18-.13-.2-.09-.23-.05-.25-.02-.26v-.25l.02-.26.05-.25.09-.23.13-.2.18-.18.22-.14.26-.12.29-.06.32-.02zm0 1.95c.13 0 .25-.04.34-.11.09-.08.14-.18.14-.3s-.05-.22-.14-.3a.52.52 0 0 0-.68 0c-.09.08-.14.18-.14.3s.05.22.14.3c.09.07.21.11.34.11z" />
+                                </svg>
+                                Python
+                            </span>
+                            <span class="skill-tag skill-tag-flex">
+                                <svg class="tag-logo-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                    fill="currentColor">
+                                    <path
+                                        d="M9.024 18c0 .402-.346.732-.77.732-.426 0-.773-.33-.773-.732 0-.403.346-.732.772-.732.425 0 .77.329.77.732zm1.616-.732c-.426 0-.772.329-.772.732 0 .402.346.732.772.732.424 0 .77-.33.77-.732 0-.403-.346-.732-.77-.732zm5.727-4.859c-.496-.44-1.127-.638-1.785-.562.457-.698.814-1.442.868-2.289.043-.655-.078-1.282-.361-1.849.208-.052.411-.112.607-.184 1.488-.545 1.583-1.637 1.341-2.484-.251-.883-1.111-1.32-2.143-.889-.646.271-1.242.756-1.724 1.365-.461.581-.796 1.258-.962 1.956-.37-.024-.766-.021-1.168.016.036-.59.133-1.189.309-1.776.45-1.503 1.353-2.617 2.115-3.666-1.588.163-3.136 1.096-4.004 2.502-.455.736-.713 1.585-.776 2.456-.239.045-.478.1-.715.166-1.517.419-2.025 1.442-1.921 2.308.107.893.914 1.513 1.986 1.222.673-.183 1.356-.576 1.972-1.097.351-.296.657-.639.912-1.008.318.019.638.047.962.083-.162.776-.462 1.519-.884 2.214-1.05-.098-2.127.185-2.91.884-.871.778-1.189 1.959-.854 3.013.332 1.045 1.265 1.704 2.355 1.623 1.107-.082 2.052-.77 2.684-1.71.378-.562.628-1.206.757-1.879.351.052.7.098 1.05.138v.001c-.029.629-.126 1.272-.303 1.9-.453 1.603-1.373 2.791-2.128 3.912 1.62-.178 3.208-1.188 4.092-2.701.464-.793.722-1.708.775-2.646.241-.041.482-.09.723-.15 1.543-.383 2.088-1.393 2.008-2.268-.083-.903-.878-1.554-1.972-1.298-.686.16-1.39.525-2.028 1.026v-.001zM11.96 6.005a22.25 22.25 0 0 1 1.058-.016 13.9 13.9 0 0 1-.027 1.041c-.347-.024-.7-.04-1.056-.048.008-.328.018-.654.025-.977zm-1.854.912c.189-.508.431-1.005.733-1.467.164.218.347.458.541.716a13.398 13.398 0 0 0-.616 1.17c-.221-.137-.44-.277-.658-.419zm1.316 4.394c-.218.423-.487.822-.803 1.183-.173-.298-.363-.61-.568-.934.254-.15.5-.312.744-.486.21.08.419.16.627.237zm2.441-1.127a13.43 13.43 0 0 0 .613-1.171c.221.138.441.279.66.42-.189.508-.431 1.005-.733 1.467-.164-.218-.348-.458-.54-.716zm.139-2.222c.348.024.701.04 1.057.049-.008.328-.018.654-.025.977a22.25 22.25 0 0 1-1.058.016 13.9 13.9 0 0 1 .026-1.042zm-3.238 2.21a13.882 13.882 0 0 1 .027-1.041c.347.024.701.04 1.057.048-.008.328-.018.654-.025.977a22.25 22.25 0 0 1-1.058.016zm1.189-4.22c.218-.423.487-.822.803-1.183.173.298.363.61.568.934-.254.15-.5.312-.744.486-.21-.08-.419-.16-.627-.237zM4.773 20.301c-.131-.412.016-.867.332-1.026.315-.157.678-.027.809.387.13.413-.017.868-.332 1.027-.315.157-.678.026-.809-.388zm2.441-.12c.119-.418.468-.659.782-.544.312.115.474.549.356.969-.117.418-.466.658-.781.543-.313-.114-.475-.549-.357-.968zm5.556 1.833a6.76 6.76 0 0 1-.362-.647c.218.069.444.126.677.168a6.533 6.533 0 0 1-.315.479zm1.319-2.27c-.033.435-.198.813-.41 1.011-.212.2-.477.199-.652-.102-.177-.302-.239-.757-.184-1.171.054-.413.232-.751.444-.949.213-.198.479-.197.653.104.177.302.239.757.184 1.171v-.064zm1.258.411c.218.423.487.822.803 1.183-.173-.298-.363-.61-.568-.934.254-.15.5-.312.744-.486.21.08.419.16.627.237z" />
+                                </svg>
+                                Java
+                            </span>
+                            <span class="skill-tag">Javascript</span>
+                            <span class="skill-tag">AWS S3</span>
+                            <span class="skill-tag">AWS (basics)</span>
+                            <span class="skill-tag">C Programming</span>
+                        </div>
+                    </div>
+
+                    <!-- Column 3: Soft Skills -->
+                    <div class="skills-card scroll-reveal delay-200">
+                        <div class="skills-card-header">
+                            <div class="skills-icon-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <h3 class="skills-card-title">Soft Skills</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span class="skill-tag">Problem Solving</span>
+                            <span class="skill-tag">Analytical Thinking</span>
+                            <span class="skill-tag">Team Collaboration</span>
+                            <span class="skill-tag">Adaptability</span>
+                            <span class="skill-tag">Time Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="section-container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid two-cards-layout">
+                    <!-- Project 1: Cloud space project collaboration Platform -->
+                    <div class="project-card scroll-reveal">
+                        <div class="project-banner project-banner-cloud">
+                            <svg class="project-logo" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor">
+                                <path
+                                    d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z" />
+                            </svg>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">CLOUD & FULL STACK DEVELOPMENT</span>
+                            <h3 class="project-card-title">Cloud space project collaboration Platform</h3>
+                            <ul class="project-bullets">
+                                <li>Developed a user-friendly cloud collaboration platform for project management and
+                                    team communication.</li>
+                                <li>Integrated <strong>AWS S3 Bucket</strong> for secure cloud storage and efficient
+                                    file access.</li>
+                                <li>Implemented a <strong>Cloud Usage & Billing</strong> module to track resource
+                                    utilization and billing information.</li>
+                                <li>Designed the platform with a scalable and modular architecture to support future
+                                    enhancements.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Adidas Sales Dashboard -->
+                    <div class="project-card scroll-reveal delay-100">
+                        <div class="project-banner project-banner-adidas">
+                            <svg class="project-logo" viewBox="0 0 725 500" xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor">
+                                <g transform="translate(-60,-430)">
+                                    <!-- Path 0: Slanted Tall bar -->
+                                    <path
+                                        d="M 533.9435,756.70465 386.43318,500.34377 492.40483,439.4751 l 183.4283,317.22955 -141.88963,0" />
+                                    <!-- Path 1: Slanted Short bar -->
+                                    <path
+                                        d="m 141.03958,720.78673 105.97165,-61.27985 56.07037,97.19777 -141.47831,0 -20.56371,-35.91792" />
+                                    <!-- Path 2: i -->
+                                    <path d="m 349.00724,920.25463 30.16006,0 0,-122.01125 -30.16006,0 0,122.01125 z" />
+                                    <!-- Path 3: s -->
+                                    <path
+                                        d="m 726.96825,923.13364 c -33.72452,0 -54.01413,-17.4106 -55.11081,-41.95001 l 31.80529,0 c 0,7.67715 4.79819,18.91861 25.36192,19.32994 13.70913,0 20.15239,-8.08849 20.15239,-14.12047 -0.82261,-9.59639 -12.88668,-10.419 -25.7732,-12.47534 -12.88652,-2.0564 -23.85386,-4.38692 -31.80518,-8.49966 -10.14488,-5.20948 -16.99942,-16.45093 -16.99942,-29.33745 0,-21.79767 18.91861,-39.07105 50.44967,-39.07105 30.57139,0 49.90133,16.03964 51.95773,39.8935 l -30.70861,0 c -0.27412,-6.44326 -1.5079,-16.58798 -19.60405,-16.58798 -12.20113,0 -20.28946,2.46752 -20.97501,10.96733 0,12.47519 25.36202,11.65274 45.10314,16.86211 18.9186,4.7983 30.98267,16.58814 30.98267,33.03907 0,30.29727 -24.53941,41.95001 -54.83653,41.95001" />
+                                    <!-- Path 4: Slanted Medium bar -->
+                                    <path
+                                        d="m 265.24438,611.93622 105.97165,-61.14278 118.85823,205.91121 -110.90696,0 0,30.16006 -30.16006,0 0,-30.29712 -83.76286,-144.63137" />
+                                    <!-- Path 5: a -->
+                                    <path
+                                        d="m 267.98623,923.13364 c -35.09542,0 -63.61043,-28.65221 -63.61043,-63.33619 0,-35.09547 28.51501,-62.78785 63.61043,-62.78785 13.29786,0 25.36187,3.56425 35.91793,10.83012 l 0,-51.13507 30.16011,0 0,163.54998 -30.16011,0 0,-8.08833 c -10.55606,6.85459 -22.62007,10.96734 -35.91793,10.96734 z m -34.68414,-63.33619 c 0,18.9185 16.17678,34.68398 35.50665,34.68398 18.91861,0 35.09542,-15.76548 35.09542,-34.68398 0,-18.91866 -16.17681,-35.09547 -35.09542,-35.09547 -19.32987,0 -35.50665,16.17681 -35.50665,35.09547" />
+                                    <!-- Path 6: d -->
+                                    <path
+                                        d="m 490.89682,756.70465 29.74883,0 0,163.54998 -29.74883,0 0,-8.08833 c -10.14478,6.85459 -22.62007,10.96734 -36.32921,10.96734 -34.68414,0 -63.19913,-28.65221 -63.19913,-63.33619 0,-35.09547 28.51499,-62.78785 63.19913,-62.78785 13.70914,0 25.77315,3.56425 36.32921,10.83012 l 0,-51.13507 z m -70.19079,103.0928 c 0,18.9185 16.17676,34.68398 34.68414,34.68398 19.32989,0 35.50665,-15.76548 35.50665,-34.68398 0,-18.91866 -16.17676,-35.09547 -35.50665,-35.09547 -18.50738,0 -34.68414,16.17681 -34.68414,35.09547" />
+                                    <!-- Path 7: a -->
+                                    <path
+                                        d="m 593.98956,923.13364 c -34.54703,0 -63.19913,-28.65221 -63.19913,-63.33619 0,-35.09547 28.6521,-62.78785 63.19913,-62.78785 13.29791,0 25.7731,3.56425 35.91798,10.83012 l 0,-9.7334 30.16006,0 0,122.14831 -30.16006,0 0,-8.08833 c -10.14488,6.85459 -22.20879,10.96734 -35.91798,10.96734 z m -33.86158,-63.33619 c 0,18.9185 16.17676,34.68398 35.09537,34.68398 18.91866,0 34.68419,-15.76548 34.68419,-34.68398 0,-18.91866 -15.76553,-35.09547 -34.68419,-35.09547 -18.91861,0 -35.09537,16.17681 -35.09537,35.09547" />
+                                    <!-- Path 8: d -->
+                                    <path
+                                        d="m 93.468866,859.79745 c 0,18.9185 16.176784,34.68398 35.095404,34.68398 19.32987,0 35.50666,-15.76548 35.50666,-34.68398 0,-18.91866 -16.17679,-35.09547 -35.50666,-35.09547 -18.91862,0 -35.095404,16.17681 -35.095404,35.09547 z m 34.272844,63.33619 c -34.684124,0 -63.336218,-28.65221 -63.336218,-63.33619 0,-35.09547 28.652094,-62.78785 63.336218,-62.78785 13.29787,0 25.77319,3.56425 36.32922,10.83012 l 0,-9.7334 29.74883,0 0,122.14831 -29.74883,0 0,-8.08833 c -10.14475,6.85459 -22.62008,10.96734 -36.32922,10.96734" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">BUSINESS ANALYTICS</span>
+                            <h3 class="project-card-title">Adidas Sales Dashboard</h3>
+                            <ul class="project-bullets">
+                                <li>Performed an end-to-end data analysis and created an interactive dashboard.</li>
+                                <li>Utilized Adidas US Sales Datasets containing real-time transaction data.</li>
+                                <li>Built visualizations to analyze sales volume, product trends, and regional
+                                    performance.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Journey Section -->
+        <section id="journey" class="journey-section">
+            <div class="section-container">
+                <h2 class="section-title">My Journey</h2>
+                <div class="journey-grid">
+                    <!-- Education Card -->
+                    <div class="journey-card scroll-reveal">
+                        <div class="journey-card-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+                            </svg>
+                            <h3 class="journey-card-title">Education</h3>
+                        </div>
+                        <div class="journey-card-body">
+                            <div class="journey-item" style="margin-bottom: 24px;">
+                                <span class="journey-year">2023 - 2027</span>
+                                <h4 class="journey-item-title">B.Tech in Artificial Intelligence & Data Science</h4>
+                                <p class="journey-item-subtitle">Prathyusha Engineering College</p>
+                                <p class="journey-item-desc"><strong>CGPA: 7.7</strong></p>
+                            </div>
+                            <div class="journey-item">
+                                <span class="journey-year">2023</span>
+                                <h4 class="journey-item-title">Higher Secondary School</h4>
+                                <p class="journey-item-subtitle">Jaya Matriculation Higher Secondary School</p>
+                                <p class="journey-item-desc"><strong>Percentage: 70 %</strong></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications & Training Card -->
+                    <div class="journey-card scroll-reveal delay-100">
+                        <div class="journey-card-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                </path>
+                            </svg>
+                            <h3 class="journey-card-title">Certifications</h3>
+                        </div>
+                        <div class="journey-card-body">
+                            <ul class="cert-list">
+                                <li>
+                                    <strong class="cert-title">Full Stack Development</strong>
+                                    <span class="cert-issuer">NoviTech R&D Pvt Ltd</span>
+                                </li>
+                                <li>
+                                    <strong class="cert-title">AWS Cloud Practitioner Essentials</strong>
+                                    <span class="cert-issuer">AWS Skill Builder</span>
+                                </li>
+                                <li>
+                                    <strong class="cert-title">Responsible AI: Applying AI Principles with Google
+                                        Cloud</strong>
+                                    <span class="cert-issuer">Google Cloud (Coursera)</span>
+                                </li>
+                                <li>
+                                    <strong class="cert-title">Introduction to Generative AI</strong>
+                                    <span class="cert-issuer">Google Cloud (Coursera)</span>
+                                </li>
+                                <li>
+                                    <strong class="cert-title">Regression Analysis</strong>
+                                    <span class="cert-issuer">Infosys Springboard</span>
+                                </li>
+                                <li>
+                                    <strong class="cert-title">Programming Fundamentals using Python</strong>
+                                    <span class="cert-issuer">Infosys Springboard</span>
+                                </li>
+                                <li>
+                                    <strong class="cert-title">Sales Analysis Dashboard using Power BI</strong>
+                                    <span class="cert-issuer">NoviTech R&D Private Limited</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Workshops & Awards Row -->
+                <div class="journey-grid" style="margin-top: 32px;">
+                    <!-- Workshops Card -->
+                    <div class="journey-card scroll-reveal">
+                        <div class="journey-card-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z">
+                                </path>
+                                <path d="M12 6v6l4 2"></path>
+                            </svg>
+                            <h3 class="journey-card-title">Workshops & Training</h3>
+                        </div>
+                        <div class="journey-card-body">
+                            <div class="journey-item" style="margin-bottom: 24px;">
+                                <span class="journey-year">September 2024</span>
+                                <h4 class="journey-item-title">AR & VR Workshop (Immersive Technology)</h4>
+                                <p class="journey-item-subtitle">Monolith Research & Training</p>
+                                <p class="journey-item-desc">Explored emerging AR/VR technologies and their role in
+                                    interactive user experiences. Gained understanding of immersive technology
+                                    applications.</p>
+                            </div>
+                            <div class="journey-item">
+                                <span class="journey-year">May 2026</span>
+                                <h4 class="journey-item-title">AI Tools & ChatGPT Workshop</h4>
+                                <p class="journey-item-subtitle">be10x</p>
+                                <p class="journey-item-desc">Trained in using AI tools for presentations, data analysis,
+                                    coding, and debugging. Acquired practical knowledge of AI-driven productivity.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Awards Card -->
+                    <div class="journey-card scroll-reveal delay-100">
+                        <div class="journey-card-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                                <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                            </svg>
+                            <h3 class="journey-card-title">Awards & Honors</h3>
+                        </div>
+                        <div class="journey-card-body">
+                            <div class="journey-item">
+                                <span class="journey-year">12th Grade</span>
+                                <h4 class="journey-item-title">Centum Holder - Computer Science</h4>
+                                <p class="journey-item-subtitle">12th Board Examination</p>
+                                <p class="journey-item-desc">Awarded for achieving 100/100 marks in Computer Science
+                                    subject.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="section-container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-wrapper">
+                    <!-- Form Container -->
+                    <div class="contact-form-container scroll-reveal">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-name">Name</label>
+                                    <input type="text" id="form-name" placeholder="John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Email</label>
+                                    <input type="email" id="form-email" placeholder="johndoe@example.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <input type="text" id="form-subject" placeholder="Opportunity/Collaboration" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <textarea id="form-message" rows="5" placeholder="Write your message here..."
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                Send Message
+                                <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content scroll-reveal">
+            <h2 class="footer-title">Let's Connect</h2>
+            <p class="footer-subtitle">Always open for exciting opportunities and insightful conversations.</p>
+            <div class="footer-socials">
+                <a href="mailto:rahulth2006@gmail.com" aria-label="Email">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/in/rahul-th-02373028b" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                </a>
+            </div>
+            <p class="copyright">&copy; 2026 Rahul TH. All rights reserved.</p>
+            <p class="footer-built">Built with cutting-edge web design principles.</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
