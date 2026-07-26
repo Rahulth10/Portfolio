@@ -755,8 +755,8 @@ li {
 }
 
 /* Dynamic Gradients for Banners */
-.project-banner-adidas {
-    background: linear-gradient(145deg, #181520, #0a080f);
+.project-banner-nike {
+    background: linear-gradient(145deg, #1f2025, #0b0c10);
 }
 
 .project-banner-cloud {
