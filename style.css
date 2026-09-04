@@ -763,6 +763,10 @@ li {
     background: linear-gradient(145deg, #1d1135, #080315);
 }
 
+.project-banner-debris {
+    background: linear-gradient(145deg, #0b192e, #030914);
+}
+
 .project-banner-uber {
     background: linear-gradient(145deg, #111827, #030712);
 }
@@ -773,6 +777,11 @@ li {
     max-height: 70px;
     color: rgba(255, 255, 255, 0.85);
     transition: var(--transition-normal);
+}
+
+.project-banner-debris .project-logo {
+    color: #38bdf8;
+    filter: drop-shadow(0 0 12px rgba(56, 189, 248, 0.4));
 }
 
 .project-banner-cloud .project-logo {
@@ -836,6 +845,12 @@ li {
 .journey-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.journey-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 32px;
 }
 
@@ -1160,7 +1175,8 @@ li {
 /* Large Tablets & Small Desktops */
 @media (max-width: 1024px) {
     .skills-grid,
-    .projects-grid {
+    .projects-grid,
+    .journey-grid-3 {
         grid-template-columns: repeat(2, 1fr);
     }
     
@@ -1207,7 +1223,8 @@ li {
     .about-grid,
     .skills-grid,
     .projects-grid,
-    .journey-grid {
+    .journey-grid,
+    .journey-grid-3 {
         grid-template-columns: 1fr;
     }
     
